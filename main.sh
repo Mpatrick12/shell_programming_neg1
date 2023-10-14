@@ -199,6 +199,23 @@ function exit_main {
     
 }
 
+function email_save {
+	echo -n "Saving Emails in ASC"
+	sleep 0.6
+	clear
+	./select-emails.sh
+}
+
+emails='student-emails.txt'
+
+function view_email {
+	    # Loading message
+	        echo -n "Opening Emails preview in ASC Order"
+		    load
+		        # End of loading
+			    cat "$emails"
+			        ./main.sh
+			}
 
 
 #app menu
@@ -207,6 +224,8 @@ echo "1) Add New Student"
 echo "2) View All Students"
 echo "3) Edit Existing Student"
 echo "4) Delete Student"
+echo "5) Save Student Emails Sorted in ASC"
+echo "6) View All Emails Only in ASC Order"
 echo "8) Exit The Program"
 
 # Allow the user to input their choice with the read function
@@ -216,24 +235,29 @@ echo -e "\n"
 
 # Switch case to call functions according to the user's choice
 case $choice in
-    1)
-        register
-        ;;
-    2)
-        view_student
-        ;;
-    3)
-        update_student
-        ;;
-    4)
-        delete_student
-        ;;
-    8)
-        exit_main
-        ;;
-    *)
-        echo "Invalid choice. Please try again."
-        ./main.sh
-        ;;
-esac
+	    1)
+		            register
+			            ;;
+				        2)
+						        view_student
+							        ;;
+								    3)
+									            update_student
+										            ;;
+											        4)
+													        delete_student
+														        ;;
+															    5)
+																            email_save
+																	            ;;
+																		        6)
+																				        view_email
+																					        ;;
+																						    8)        exit_main
+																							            ;;
+																								        *)
+																										        echo "Invalid choice. Please try again."
+																											        ./main.sh
+																												        ;;
+																											esac
 
