@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-#function for program loader
-# program load
+#function for program loader 
+
 function load {
  for i in {1..10}; do
  echo -n "."
