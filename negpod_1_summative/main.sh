@@ -7,7 +7,7 @@ function load {
 done
  echo -e "100%\n"
 }
-  echo -e "\n\n***************** Welcome To Registration office  ***************\n"
+  echo -e "\n\n***************** Bachelor of Software Engineering cohort list of students  ***************\n"
  echo -n "Starting App "
   load
  file_path="students-list_0923.txt"
