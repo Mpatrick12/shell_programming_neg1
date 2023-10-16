@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# selecting email 
 file_path='students-list_0923.txt'
 file_save='student-emails.txt'
 if [ -f "$file_path" ]; then
