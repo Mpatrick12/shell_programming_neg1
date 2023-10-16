@@ -10,7 +10,7 @@ function load {
 }
 
 # Check if the directory exists
-folder="negpod_0-q1"
+folder="negpod_1-q1"
 
 # File initialization
 s_email='select-emails.sh'
@@ -25,7 +25,7 @@ if [ -f "$s_email" ] && [ -f "$main" ] && [ -f "$file_path" ] && [ -f "$file_sav
         mv -f "$main" "$s_email" "$file_save" "$file_path" "$folder"
         echo -n "Backing up data to alu-cod.online "
         load
-        ./backup-Negpod_0.sh
+        ./backup-Negpod_1.sh
     else
         echo -n "Creating directory "
         load
@@ -37,7 +37,7 @@ if [ -f "$s_email" ] && [ -f "$main" ] && [ -f "$file_path" ] && [ -f "$file_sav
 	"$folder"
         echo -n "Backing up data to alu-cod.online "
         load
-        ./backup-Negpod_0.sh
+        ./backup-Negpod_1.sh
     fi
 else
     echo "Error: Your Files Don't Exist"
