@@ -15,7 +15,7 @@ done
   load
  file_path="students-list_0923.txt"
 
-#----------------------------------------function To Register student
+#----------------------------------------function To Register students
 function register {
  #get inputs with function
  read -p "Enter Student Email: " email
